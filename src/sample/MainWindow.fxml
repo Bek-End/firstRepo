@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="888.0" style="-fx-background-color: #081414;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="887.0">
+         <top>
+            <AnchorPane fx:id="UP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="179.0" prefWidth="1200.0" BorderPane.alignment="BOTTOM_LEFT">
+               <children>
+                  <Button fx:id="RCreate" layoutX="294.0" layoutY="37.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="172.0" style="-fx-background-color: #081414; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: #B5520B; -fx-border-width: 5px;" text="Random add" textFill="WHITE">
+                     <font>
+                        <Font name="Bauhaus 93" size="23.0" />
+                     </font>
+                  </Button>
+                  <ComboBox fx:id="ShapeBox" layoutX="474.0" layoutY="41.0" prefHeight="40.0" prefWidth="153.0" style="-fx-background-color: #B5520B; -fx-background-radius: 10px;" />
+                  <Label layoutX="67.0" layoutY="26.0" prefHeight="132.0" prefWidth="209.0" style="-fx-background-color: #081414; -fx-background-radius: 15px; -fx-border-color: #C26004; -fx-border-radius: 15px; -fx-border-width: 5px;" text="Seventh Lab" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Century Gothic Bold" size="43.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="MoveBtn" layoutX="557.0" layoutY="101.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="71.0" style="-fx-background-color: #B5520B;" text="Move" textFill="WHITE">
+                     <font>
+                        <Font name="Bauhaus 93" size="14.0" />
+                     </font></Button>
+                  <Button fx:id="DestroyBtn" layoutX="474.0" layoutY="101.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="75.0" style="-fx-background-color: #B5520B;" text="Destroy" textFill="WHITE">
+                     <font>
+                        <Font name="Bauhaus 93" size="14.0" />
+                     </font></Button>
+                  <ComboBox fx:id="ContainerPicker" layoutX="294.0" layoutY="101.0" prefHeight="36.0" prefWidth="171.0" style="-fx-background-color: #B5520B;" />
+                  <Button fx:id="CreateEmptyContainer" layoutX="636.0" layoutY="101.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="189.0" style="-fx-background-color: #B5520B;" text="Create Empty Container" textFill="WHITE">
+                     <font>
+                        <Font name="Bauhaus 93" size="14.0" />
+                     </font></Button>
+                  <Button fx:id="CreateFullContainer" layoutX="635.0" layoutY="42.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: #B5520B;" text="Create Full Container" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Bauhaus 93" size="14.0" />
+                     </font></Button>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="888.0" style="-fx-background-color: white;" BorderPane.alignment="TOP_LEFT">
+               <children>
+                  <Group fx:id="group">
+                     <children>
+                        <Canvas fx:id="PlaceToDraw" height="518.0" width="889.0" />
+                     </children>
+                  </Group>
+               </children></AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
